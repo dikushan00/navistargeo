@@ -1,0 +1,110 @@
+@background_color: #1E2723;
+@formBack_color: #7AB33C;
+@button_color: #FEC900;
+@main_font: 'Montserrat', sans-serif;
+
+body {
+    background-color: @background_color;
+    font-family: @main_font;
+}
+
+.input-field>label {
+    color: #fff;
+}
+
+.login {
+
+    &_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &_modal {
+        width: 100%;
+        margin-top: 100px;
+        padding: 20px 20px 45px 425px;
+        background-color: @formBack_color;
+        box-shadow: 0 0 25px 8px #000;
+        border-radius: 1px;
+
+        &:after {
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            background-color: #fff;
+        }
+    }
+
+    &_input {
+        padding-left: 40px !important;
+        border-bottom: 1px solid #fff !important;
+        box-shadow: none !important;
+        box-shadow: 0 !important;
+
+        &:focus{
+            box-shadow: none !important;
+            box-shadow: 0 !important;
+        }
+    }
+
+    &_label {
+        left: 50px !important;
+    }
+
+    &_label.active {
+        color: orange !important;
+    }
+
+    &_title {
+        color: #fff;
+        font-size: 32px;
+        padding-left: 22px;
+    }
+
+    &_desc {
+        color: #fff;
+        font-size: 16px;
+        padding-left: 22px;
+    }
+
+    &_img {
+        position: absolute;
+        left: 216px;
+        top: 128px;
+
+        &:after {
+            position: absolute;
+            top: 50px;
+            left: 114px;
+            display: block;
+            width: 45px;
+            height: 45px;
+            z-index: 1000;
+            background-color: orange;
+        }
+    }
+
+    &_btn {
+        margin: 0 .75rem
+    }
+
+    &_icon {
+        color: #fff;
+
+        &_bg {
+            height: 30px;
+            width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, .5);
+            position: absolute;
+            top: 8px;
+            left: 11px;
+        }
+    }
+}
+
+
