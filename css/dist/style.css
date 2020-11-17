@@ -13,10 +13,11 @@ body {
 .login_modal {
   width: 100%;
   margin-top: 100px;
-  padding: 20px 20px 45px 425px;
+  padding: 20px 20px 45px 400px;
   background-color: #7AB33C;
   box-shadow: 0 0 25px 8px #000;
   border-radius: 1px;
+  position: relative;
 }
 .login_modal:after {
   position: absolute;
@@ -51,9 +52,11 @@ body {
   padding-left: 22px;
 }
 .login_img {
+  width: 316px;
   position: absolute;
-  left: 216px;
-  top: 128px;
+  left: -40px;
+  bottom: -13px;
+  box-shadow: 0 0 28px -15px #000;
 }
 .login_img:after {
   position: absolute;
@@ -67,6 +70,16 @@ body {
 }
 .login_btn {
   margin: 0 0.75rem;
+}
+.login_btn_forget {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+}
+.login_btn_forget:hover {
+  text-decoration: underline;
 }
 .login_icon {
   color: #fff;
@@ -82,4 +95,31 @@ body {
   position: absolute;
   top: 8px;
   left: 11px;
+}
+.row_input {
+  margin-bottom: 0;
+}
+.input_field_added {
+  margin-top: 0;
+}
+@media (max-width: 1100px) {
+  .login_modal {
+    padding: 20px 20px 45px 80px;
+  }
+  .login_img {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .login_modal {
+    padding: 20px 20px 45px 40px;
+  }
+}
+@media (max-width: 576px) {
+  .login_modal {
+    padding: 20px;
+  }
+  .login_input {
+    width: auto !important;
+  }
 }
